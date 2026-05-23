@@ -1,0 +1,146 @@
+{
+    "halfword": {
+        "tipo": "pirata",
+        "direccion": "D:/Half Sword/HalfSwordUE5.exe"
+    },
+    "rimworld": {
+        "tipo": "pirata",
+        "ubicacion": "C:/Program Files (x86)/RimWorld/RimWorldWin64.exe"
+    },
+    "counter strike 2": {
+        "tipo": "original",
+        "steam_id": "730"
+    },
+    "obsidian": {
+        "ubicacion": "C:/Users/agusv/AppData/Local/Programs/Obsidian/Obsidian.exe"
+    },
+    "chrome normal": {
+        "comando": "start chrome --profile-directory=Default",
+        "aclaracion": "Si el usuario no especifica, usar la cuenta Default (Normal). Si dice cole o colegio, usar Profile 2."
+    },
+    "chrome colegio": {
+        "comando": "start chrome --profile-directory=Profile 2"
+    },
+    "abre spotify": {
+        "comando": "start chrome --profile-directory=Default https://open.spotify.com",
+        "tipos": {
+            "chill": "https://open.spotify.com/playlist/0IO18yQS99tECvMkyeQdpi?autoplay=true&shuffle=true",
+            "estudio": "https://open.spotify.com/playlist/0CuFsvG6o7FtfIancBBFqT?autoplay=true&shuffle=true",
+            "programacion": "https://open.spotify.com/playlist/0lJBn1dUHm6sNVHozUzemD?autoplay=true&shuffle=true"
+        }
+    },
+    "pausa spotify": {
+        "codigo": "powershell -command \"$wsh = New-Object -ComObject WScript.Shell; $wsh.SendKeys([char]179)\""
+    },
+    "cerrar chrome": {
+        "comando": "taskkill /f /im chrome.exe"
+    },
+    "cerrar obsidian": {
+        "comando": "taskkill /f /im Obsidian.exe"
+    },
+    "cerrar ventana actual": {
+        "aclaracion": "solo si no te dice ninguna que este en la lista",
+        "comando": "powershell -command \"$wsh = New-Object -ComObject WScript.Shell; $wsh.SendKeys('%{F4}')\""
+    },
+    "cerrar todo": "powershell -command \"Get-Process | Where-Object { $_.MainWindowTitle } | ForEach-Object { Stop-Process $_.Id -Force }\"",
+    "modos": {
+        "explicacion": "abre una lista de comandos al mismo tiempo",
+        "estudio": "abre spotify en modo estudio, obsidian y chrome en modo colegio",
+        "programacion": "abre spotify en modo programacion y vscode"
+    },
+    "configuracion_teclas": {
+        "aclaracion": "este comando te sirve para escribir donde quieres lo que te diga",
+        "codigo": "powershell -command \"$wsh = New-Object -ComObject WScript.Shell; $wsh.SendKeys('{tecla}')\"",
+        "teclas": {
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "D": "D",
+            "E": "E",
+            "F": "F",
+            "G": "G",
+            "H": "H",
+            "I": "I",
+            "J": "J",
+            "K": "K",
+            "L": "L",
+            "M": "M",
+            "N": "N",
+            "O": "O",
+            "P": "P",
+            "Q": "Q",
+            "R": "R",
+            "S": "S",
+            "T": "T",
+            "U": "U",
+            "V": "V",
+            "W": "W",
+            "X": "X",
+            "Y": "Y",
+            "Z": "Z",
+            "a": "a",
+            "b": "b",
+            "c": "c",
+            "d": "d",
+            "e": "e",
+            "f": "f",
+            "g": "g",
+            "h": "h",
+            "i": "i",
+            "j": "j",
+            "k": "k",
+            "l": "l",
+            "m": "m",
+            "n": "n",
+            "o": "o",
+            "p": "p",
+            "q": "q",
+            "r": "r",
+            "s": "s",
+            "t": "t",
+            "u": "u",
+            "v": "v",
+            "w": "w",
+            "x": "x",
+            "y": "y",
+            "z": "z",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "ENTER": "{ENTER}",
+            "ESPACIO": " ",
+            "TAB": "{TAB}",
+            "BACKSPACE": "{BACKSPACE}",
+            "ESC": "{ESC}",
+            "UP": "{UP}",
+            "DOWN": "{DOWN}",
+            "LEFT": "{LEFT}",
+            "RIGHT": "{RIGHT}"
+        }
+    },
+    "abrir en vscode un archivo": {
+        "esplicacion": "primero llega a la uvicacion con cd y luego ejecuta code . para que se habra een vscode"
+    },
+    "abrir discord": {
+        "code": "C:\\Users\\agusv\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe"
+    },
+    "abrir atministrador de tareas": {
+        "aclaracion": "tambien llamado atministrador",
+        "code": "taskmgr"
+    },
+    "abrir factorio": {
+        "uvicacion": "\"C:\\Program Files\\Factorio\\Run_Factorio.exe\""
+    },
+    "abre Totally Accurate Battle Simulator": {
+        "nombres": "Totally Accurate Battle Simulator o TABS",
+        "si no se el nombre te puedo decir algo como": "el ujuego de peleas con mmuchecos raros",
+        "ubicacion": "\"D:\\Games\\Totally Accurate Battle Simulator\\TotallyAccurateBattleSimulator.exe\""
+    }
+}
