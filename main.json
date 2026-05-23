@@ -6,7 +6,7 @@
     },
     
     "abre spotify": {
-        "comando": "start chrome --profile-directory=Default https://open.spotify.com",
+        "comando": "start chrome --profile-directory=Default https://open.spotify.com"
         
     },
     "pausa spotify": {
